@@ -1,0 +1,14 @@
+managed implementation in class zbp_z1_i_gittest unique;
+strict ( 2 );
+
+define behavior for zz1_i_gittest //alias <alias_name>
+persistent table zz1_i_gittest
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) Product;
+}
